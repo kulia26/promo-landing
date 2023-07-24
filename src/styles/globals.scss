@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'FixelDisplay';
+  src: url('../../public/fonts/FixelDisplay-Regular.ttf');
+  src: url('../../public/fonts/FixelDisplay-Regular.woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
 @layer base {
-  html,
+  html {
+    font-family: FixelDisplay, sans-serif;
+  }
   body {
-    @apply font-sans;
+    font-family: FixelDisplay, sans-serif;
+    background: linear-gradient(180deg, #b0ea78 0%, #54a552 100%);
   }
 }
