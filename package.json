@@ -19,7 +19,7 @@
     "clean:next-cache": "rimraf .next",
     "clean:next-output": "rimraf out",
     "clean": "run-p clean:node_modules-cache clean:next-cache clean:next-output",
-    "build:ci": "run-s clean next:build next:export",
+    "build:ci": "cross-env NODE_ENV=local run-s clean next:build next:export",
     "postbuild:ci": "node scripts/post-export.js",
     "build": "run-s clean next:build",
     "serve-nextjs-output": "serve out -l 3000",
