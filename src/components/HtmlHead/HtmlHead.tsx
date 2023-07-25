@@ -12,7 +12,10 @@ export const HtmlHead: React.FunctionComponent<IHtmlHeadProps> = ({
   children,
 }) => (
   <Head>
-    <title>{title && `${title} | `}Hello Next.js SSG</title>
+    <title>
+      єТалончик Бот | Допоможe знайти талончик на здачу іспиту в сервісному
+      центрі
+    </title>
     {children}
   </Head>
 );
