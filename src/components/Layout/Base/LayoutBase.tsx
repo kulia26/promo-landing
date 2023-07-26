@@ -34,14 +34,14 @@ export const LayoutBase: React.FunctionComponent<ILayoutBaseProps> = ({
       {htmlHead}
 
       <div className={cs(styles.container, containerClassName)}>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11274322156" />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-ENTF49JS5W" />
         <Script id="google-analytics">
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'AW-11274322156');
+          gtag('config', 'G-ENTF49JS5W');
         `}
         </Script>
 
