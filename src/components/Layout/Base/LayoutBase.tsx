@@ -52,7 +52,7 @@ export const LayoutBase: React.FunctionComponent<ILayoutBaseProps> = ({
             className={styles.footerLink}
             href="https://bit.ly/43w9O8I"
           >
-            {`Попередження про використання`}
+            {`Умови користування`}
           </TargetBlankLink>
         </footer>
       </div>
