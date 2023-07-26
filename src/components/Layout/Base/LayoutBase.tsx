@@ -4,12 +4,13 @@ import cs from 'clsx';
 
 import HtmlHead from 'components/HtmlHead';
 import TargetBlankLink from 'components/Link/TargetBlank';
+import Script from 'next/script';
 
 const styles = {
   container: 'p-0 flex flex-col min-h-screen',
   main: 'px-4 flex flex-col flex-1',
   footer: 'mt-2 w-full h-12 flex justify-center items-center space-x-2',
-  footerLink: 'flex justify-center items-center',
+  footerLink: 'flex justify-center items-center text-center',
   footerLogo: 'ml-2 h-4',
 };
 
@@ -33,6 +34,17 @@ export const LayoutBase: React.FunctionComponent<ILayoutBaseProps> = ({
       {htmlHead}
 
       <div className={cs(styles.container, containerClassName)}>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11274322156" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'AW-11274322156');
+        `}
+        </Script>
+
         <main className={cs(styles.main, className)}>{children}</main>
 
         <footer className={styles.footer}>

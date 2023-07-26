@@ -19,7 +19,7 @@ export const Home: React.FunctionComponent = () => {
   return (
     <Layout className={styles.main}>
       <div className="fs-40 flex flex-col items-center text-7xl">🚗🇺🇦</div>
-      <div className="my-0.5 flex flex-col items-center space-y-2 text-6xl font-bold">
+      <div className="my-0.5 flex flex-col items-center space-y-2 pl-0.5 pr-0.5 text-4xl font-bold sm:text-6xl">
         єТалончик Бот
       </div>
       <div className="my-2 flex flex-col items-center text-lg">
@@ -29,6 +29,7 @@ export const Home: React.FunctionComponent = () => {
         <TargetBlankLink href="https://t.me/talonchyk_bot">
           <div className="my-6 flex flex-col items-center justify-items-center">
             <img
+              className="rounded-lg"
               width={100}
               height={100}
               src={updateAssetsPrefix('vercel.svg')}
